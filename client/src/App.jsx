@@ -4,6 +4,9 @@ import Arrow from './components/Arrow';
 import Navbar from './components/Navbar';
 import RotateIcon from './assets/Arrow.svg'; // Adjust the path based on your folder structure
 import Faqcomponent from './components/Faqcomponent';
+import { FaArrowRotateRight } from "react-icons/fa6";
+import { FaPlusCircle } from "react-icons/fa";
+import { RiFullscreenFill } from "react-icons/ri";
 
 function App() {
   const [activeTab, setActiveTab] = useState('Study');
@@ -70,9 +73,11 @@ function App() {
       </div>
     </div>
   </div>
+  
   {/* Render the SVG icon component */}
-  <div className="flex justify-center mt-4">
-    <img src={RotateIcon} alt="Rotate Icon" className="w-8 h-8" />
+  <div className="flex justify-center mt-4 text-2xl">
+  <FaArrowRotateRight />
+
     <div className="flex ml-36">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
         <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clipRule="evenodd" />
@@ -82,30 +87,25 @@ function App() {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
         <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clipRule="evenodd" />
       </svg>
-      <div className='flex justify-end ml-40'>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-        <path fillRule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm18 3H3.75v9a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V9Zm-15-3.75A.75.75 0 0 0 4.5 6v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V6a.75.75 0 0 0-.75-.75H5.25Zm1.5.75a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H7.5a.75.75 0 0 1-.75-.75V6Zm3-.75A.75.75 0 0 0 9 6v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V6a.75.75 0 0 0-.75-.75H9.75Z" clipRule="evenodd" />
-      </svg>
+      <div className='flex justify-end text-2xl ml-40'>
+      <RiFullscreenFill />
       </div>
     </div>
   </div>
   
   
   {/* section  */}
-    <div className='flex flex-row justify-between mx-16 text-xl my-20'>
+  <div className='flex flex-row justify-between mx-16 text-xl my-20'>
       <div>
-      <h1> Powered By Hyggex</h1>
+      <img src="https://i.postimg.cc/LX9XcL3m/Frame-41.png" alt="" srcset="" />
       </div>
-      <div className='flex flex-row space-x-4'>
-      <div className='mb-2 pb-3'>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-9 h-9">
-  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
-</svg>
+      <div className='flex flex-row space-x-4 mt-8'>
+      <div className=' pb-3 text-4xl'>
+      <FaPlusCircle />
         </div>
-        <div className='text-transparent font-bold text-3xl bg-gradient-to-r bg-clip-text from-blue-900 to-blue-800'>
+        <div className='text-transparent font-bold text-3xl bg-gradient-to-r bg-clip-text from-blue-900 to-blue-600'>
         <h1>Create Flashcard</h1>
         </div>
-
       </div>
     </div>
      
